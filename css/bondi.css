@@ -209,6 +209,9 @@ header .container .login{
 /* start landing  */
 .landing{
     background-color: var(--background-color);
+    background-image: url("/home/mona/MyProjects/BondiProject/images/moon-1527501_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     /* position: relative; */
 }
@@ -225,13 +228,13 @@ header .container .login{
 }
 
 .landing .content h2 {
-    color: var(--secondary-color);
+    color:#706d6d;
     font-size: 60px;
     font-weight: 300;
 }
 
 .landing .content p {
-    color: white;
+    color: rgb(49, 47, 47);
     font-size: 16px;
 }
 
@@ -299,6 +302,34 @@ header .container .login{
 /* start work  */
 .work-section {
     background-color: #f3f8fe;
+}
+@media (max-width: 450px)
+{
+    .work-section .container{
+        max-width: 300px;
+    }
+    .work-section .container .mid-links {
+        max-width: 250px;
+        text-align: center;
+        margin: auto;
+    }
+    .work-section .container .mid-links .links{
+        max-width: 250px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .work-section .container .mid-links ul .links li{
+        margin: 0;
+    }
+    .work-section .container .mid-links ul .links li a {
+        margin-right: 0;
+        padding: 0px;
+    }
 }
 
 .work-section .container .mid-links ul.links {
@@ -396,6 +427,12 @@ header .container .login{
     margin: 0 auto;
     text-align: center;
     padding-bottom: 50px;
+}
+@media (max-width: 550px){
+    .work-section .more-btn{
+        margin: 0 auto;
+        max-width:300px;
+    }
 }
 
 .work-section .more-btn button {
@@ -502,13 +539,23 @@ header .container .login{
 }
 /* end head */
 
-/* start images*/
+/* start team-images*/
 .team-section .team{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     margin: 10px auto;
     max-width: 1000px;
+}
+
+@media (max-width: 550px){
+    .team-section .team {
+        display: block;
+        text-align: center;
+    }
+    .team-section .team div{
+        margin: 0px auto;
+    }
 }
 
 .container .team-images {
@@ -570,6 +617,7 @@ header .container .login{
     padding: 20px;
 }
 
+/* start icon-logo*/
 .container .icon-logo {
     display: flex;
     justify-content: center;
@@ -582,18 +630,20 @@ header .container .login{
     height: 100px;
     
 }
-/* @media (max-width: 767px){
+ @media (max-width: 767px){
     .container .icon-logo {
-        width: fit-content;
+        /* width: fit-content; */
+        display: none;
     }
 
     .container .icon-logo img{
-        width: 50px;
-        height: 50px;
+        /* width: 50px;
+        height: 50px; */
+        display: none;
     }
-
-} */
-/*end images*/
+} 
+/*end icon-logo*/
+/*end team-images*/
 /* team end  */
 
 /* start your-project */
@@ -700,7 +750,13 @@ header .container .login{
     background-color: var(--btn-txt-color);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px){
+    .subscribe {
+    max-width: 750px;
+    }
 }
 
 .subscribe .container {
@@ -708,7 +764,7 @@ header .container .login{
     justify-content: center;
     align-items: center;
 }
-
+ 
 .subscribe .container .subs label {
     color: #5e5151;
     font-size: 16px;
@@ -738,10 +794,203 @@ header .container .login{
     color: var(--btn-txt-color);
     border-radius: 25px;
 }
+@media (max-width: 767px){
+    .subscribe .container {
+    display: block;
+    }
+
+    .subscribe .container button {
+        margin: 20px auto 0px ;
+        /* width: 150px; */
+        text-align: center;
+    }
+ }
 /* end subscribe */
 
 /* start footer  */
 footer {
     background-color: #1a2940de;
 }
+footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+footer .container .lower-logo img{
+    height: 40px;
+}
+footer .container .lower-txt {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: 300px;
+    line-height: 2;
+    letter-spacing: 1;
+    color: white;
+    font-size: 13px;
+}
+footer .container .created {
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 1;
+}
+footer .container .created .graph{
+    color: var(--main-color);
+}
+footer .container .copyRight{
+    font-size: 13px;
+}
+footer .container .copyRight span{
+    color: #ffc836;
+}
+footer .container .lower-links .first-link{
+    font-size: 16px;
+}
+footer .container .lower-links li {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 12px;
+}
+footer .container .about-us .first-about{
+    font-size: 16px;
+}
+footer .container .about-us li {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 12px;
+}
+footer .container .contact div{
+    margin-bottom: 20px;
+}
+footer .container .contact button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #fe3151;
+    border: none;
+    outline: none;
+    padding: 10px 90px;
+    border-radius: 60px;
+    color: white;
+    font-size: 13px;
+}
+footer .container .contact .contact-head {
+    color: white;
+    
+
+}
+footer .container .contact .contact-us {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1;    
+
+}
+footer .container .contact .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .container .contact .social-icons i {
+    width: 60px;
+    height: 50px;
+}
+@media (max-width: 900px)
+{
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+    footer .container .lower-txt{
+        text-align: center;
+        margin:30px  auto;
+        position: relative;
+    }
+    footer .container .lower-txt::after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: calc(100% - 50px);
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        background-color: #19c8fa;
+
+    }
+   footer .container .created {
+        display: none;
+    }
+    footer .container .copyRight{
+        display: none;
+    }
+    footer .container .lower-links {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+    footer .container .lower-links::after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        background-color: #19c8fa;
+
+    }
+    footer .container .lower-links .first-link{
+        display: none;
+    }
+    footer .container .about-us{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    footer .container .about-us::after{
+       content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        background-color: #19c8fa; 
+    }
+    footer .container .about-us .first-about{
+        display: none;
+    }
+    footer .container .contact .contact-head{
+        display: none;
+
+    }
+    footer .container .contact .contact-us{
+        margin-top: 20px;
+    }
+    footer .container .contact button{
+        margin-top: 10px;
+    }
+    footer .container .contact .social-icons{
+        margin-top: 10px;
+    }
+    footer .container .small-created span{
+        color: #ffc836;
+    }
+    footer .container .small-copyRight span{
+        color: #19c8fa;
+    }
+    footer .container .small-created {
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: 1;
+        color: white;
+    }
+    footer .container .small-copyRight{
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: 1;
+        color: white;
+    }
+}
+
 /* end footer  */
