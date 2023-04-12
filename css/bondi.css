@@ -209,7 +209,7 @@ header .container .login{
 /* start landing  */
 .landing{
     background-color: var(--background-color);
-    background-image: url("/home/mona/MyProjects/BondiProject/images/moon-1527501_1920.jpg");
+    background-image: url("../images/moon-1527501_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
